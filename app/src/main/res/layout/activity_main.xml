@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/rollBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/switchLL"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/roll"
+            android:textColor="@color/gray_500" />
+
+        <EditText
+            android:id="@+id/new_dieET"
+            style="@style/myEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/diceSP"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/choose_diceTV"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="3"
+            tools:ignore="LabelFor,RtlSymmetry" />
+
+        <LinearLayout
+            android:id="@+id/switchLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new_dieET"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/roll_onceTV"
+                style="@style/myTextViewStyle.myLabel"
+                android:text="@string/roll_once" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/on_offSC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:checked="true"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/roll_twiceTV"
+                style="@style/myTextViewStyle.myLabel"
+                android:text="@string/roll_twice" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/diceSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTV"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/choose_diceTV"
+            android:background="@drawable/spinner_bg"
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/choose_diceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleTV"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="@string/choose_the_die"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/titleTV"
+            style="@style/myTextViewStyle.myLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins"
+            android:text="@string/roll_the_dice"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/save_new_dieTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/choose_diceTV"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="@string/add_new_die"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!--        inline style -->
+        <TextView
+            android:id="@+id/resultTV"
+            style="@style/myTextViewStyle.myLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rollBT"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins"
+            android:text="@string/zero"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>

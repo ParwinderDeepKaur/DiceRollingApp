@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">DiceRolling_Parwinder</string>
+    <string name="point1">1</string>
+    <string name="point2">2</string>
+    <string name="point3">3</string>
+    <string name="points_4">4</string>
+    <string name="points_5">5</string>
+    <string name="points_6">6</string>
+    <string name="roll_the_dice">Roll the Dice!</string>
+    <string name="choose_the_die">Choose the Die:</string>
+    <string name="roll_once">Roll Once</string>
+    <string name="roll_twice">Roll Twice</string>
+    <string name="add_new_die">Add new die:</string>
+    <string name="zero">0</string>
+    <string name="roll">Roll</string>
+    <string name="new_die_created">New Die Created!</string>
+    <string name="die_already_exists">Die already exists</string>
+</resources>
